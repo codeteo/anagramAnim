@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Platform.Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+
+    <!-- Base Theme -->
+    <style name="Base.Platform.Theme" parent="Platform.Theme">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+
+    <!-- App Theme -->
+    <style name="AppTheme" parent="Base.Platform.Theme">
+
+        <item name="android:textColorHighlight">@color/primary_color_translucent</item>
+
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryDark">@color/primary_color_dark</item>
+        <item name="colorAccent">@color/accent_color</item>
+    </style>
+
+
+    <!-- Toolbar style -->
+    <style name="Widget.AppTheme.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+
+    <!-- Transparent Toolbar -->
+    <style name="Widget.AppTheme.Toolbar.Transparent">
+        <item name="android:background">@null</item>
+    </style>
+
+
+</resources>
